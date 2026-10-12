@@ -1,17 +1,28 @@
-# Flipper Zero - Ridi Animation (slowed by 30%)
+# Flipper Zero Animations - Ridi + Dolphin
 
-Animace z tvých framů, frame rate snížený z 7 na 5.
+Všechny animace, které jsme dělali.
 
-## Stažení ZIPu
+## Soubory v repo (base64):
 
-Soubor **RidiAnim_slow.zip.b64** obsahuje celý ZIP v base64.
+| Soubor | Popis |
+|--------|--------|
+| **RidiAnim_slow.zip.b64** | Hlavní - zpomalená verze (frame rate 5) z tvých framů |
+| **RidiAnim.zip.b64** | Původní rychlost (frame rate 7) |
+| **CoolDolphin_anim.zip.b64** | Delfínek plavající |
+| **DolphinRidi_anim.zip.b64** | Delfínek v autě (vymyšlená) |
+| **Ridi_from_your_frames.zip.b64** | Verze z prvních framů |
 
-### Jak dekódovat:
+## Jak dekódovat jakýkoliv .b64:
+
 ```bash
-base64 -d RidiAnim_slow.zip.b64 > RidiAnim_slow.zip
-unzip RidiAnim_slow.zip
+# stáhni
+curl -L -o soubor.b64 https://raw.githubusercontent.com/luciferbelzebob3-afk/flipper-ridi-anim/main/SOUBOR.b64
+
+# dekóduj
+base64 -d soubor.b64 > soubor.zip
+unzip soubor.zip
 ```
 
-Pak složku nahraj do `/ext/dolphin/` na Flipperu a uprav `manifest.txt`.
+Pak složku nahraj do `/ext/dolphin/`.
 
-Repo: https://github.com/luciferbelzebob3-afk/flipper-ridi-anim
+**Repo:** https://github.com/luciferbelzebob3-afk/flipper-ridi-anim
